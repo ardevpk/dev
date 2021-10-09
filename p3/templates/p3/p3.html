@@ -495,29 +495,31 @@
                 <section id="contact">
 
 
-                    <h3 class="headline scroll-animated">Contact Me</h3>
+                    <a href="/contactus/" target="_blank"><h3 class="headline scroll-animated">Contact Me</h3></a>
                     
                     
                     <!-- CONTACT FORM --> 
-                    <form id="contact-form" action="{% static 'p3/assets/php/contact.php' %}" method="post">
+                    <!-- <form id="contact-form" action="{% static '../p3/assets/php/contact.php' %}" method="post" target="_blank"> {% csrf_token %}
 
                        
                         <input id="contact-form-name" type="text" name="name" class="form-control scroll-animated" placeholder="* Your Name">
                         
-                        <input id="contact-form-email" type="text" name="email" class="form-control scroll-animated" placeholder="* Your Email">
+                        <input id="contact-form-email" type="email" name="email" class="form-control scroll-animated" placeholder="* Your Email"> -->
                         
                         <!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-                        <div class="fhp-input"><input id="contact-form-company" type="text" name="company" class="form-control"></div>
+                        <!-- <div class="fhp-input"><input id="contact-form-company" type="text" name="company" class="form-control"></div> -->
                         <!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
                         
-                        <textarea id="contact-form-message" name="message" class="form-control scroll-animated" placeholder="* Your Message"></textarea>
+                        <!-- <textarea id="contact-form-message" name="message" class="form-control scroll-animated" placeholder="* Your Message"></textarea>
                         
-                        <button type="submit" class="form-control scroll-animated">Send Message<div class="circle"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></div></button>
+                        <button type="submit" class="form-control scroll-animated">Send Message
+                            <div class="circle"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        </button>
                         
                         <div class="success-message"><i class="fa fa-check" aria-hidden="true"></i>The Email was Sent Successfully!</div>
 
                    
-                    </form>
+                    </form> -->
                     <!-- /CONTACT FORM --> 
 
 

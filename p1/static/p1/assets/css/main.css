@@ -1092,15 +1092,18 @@ body {
   background-repeat: no-repeat;
 }
 .about--options > a:nth-child(1) {
-  background-image: url("../img/design1.jpg");
+  background-image: url("../img/main.JPG");
   /* background-image: url("../img/about-winners.jpg"); */
 }
 .about--options > a:nth-child(2) {
-  background-image: url("../img/design2.JPG");
+  background-image: url("../img/p.JPG");
   /* background-image: url("../img/about-philosophy.jpg"); */
 }
 .about--options > a:nth-child(3) {
-  background-image: url("../img/design3.JPG");
+  background-image: url("../img/r.JPG");
+}
+.about--options > a:nth-child(4) {
+  background-image: url("../img/r2.JPG");
 }
 .about--options > a:hover h3 {
   bottom: -50px;

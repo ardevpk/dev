@@ -141,7 +141,7 @@
             <div class="about">
               <div class="about--banner">
                 <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Contact
+                <a href="/contactus/" target="_blank">Contact
                   <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -153,14 +153,17 @@
                 <img src="{% static 'p1/assets/img/about-visual.png' %}" alt="About Us">
               </div>
               <div class="about--options">
-                <a href="https://ardevpk.herokuapp.com/two/" target="_blank">
-                  <h3>1.Design</h3>
+                <a href="/" style="margin-right: 24px;" target="_blank">
+                  <h3>Ai Prime</h3>
                 </a>
-                <a href="https://ardevpk.herokuapp.com/" target="_blank">
-                  <h3>2.Design</h3>
-                </a>
-                <a href="https://ardevpk.herokuapp.com/one/" target="_blank">
+                <a href="/p2/" style="margin-right: 24px;" target="_blank">
                   <h3>Portfolio</h3>
+                </a>
+                <a href="/p4/" style="margin-right: 24px;" target="_blank">
+                  <h3>Resume</h3>
+                </a>
+                <a href="/p3/" target="_blank">
+                  <h3>Resume 2.0</h3>
                 </a>
               </div>
             </div>
@@ -172,12 +175,12 @@
                   <div class="modal--information">
                     <!-- <p>Pawia 5, 31-154 Kraków, Poland</p> -->
                     <a href="mailto:hackerzxstudio@gmail.com" target="__blank">hackerzxstudio@gmail.com</a>
-                    <a href="tel:+93 321 3660078" target="_blank">+93 321 3660078</a>
+                    <a href="tel:+93 321 3660078" target="_blalnk">+93 321 3660078</a>
                   </div>
                   <ul class="modal--options">
                     <!-- <li><a href="#0">Bēhance</a></li>
                     <li><a href="#0">dribbble</a></li> -->
-                    <li><a href="https://ardevpk.herokuapp.com/contactus" target="_blank">Contact Us</a></li>
+                    <li><a href="/contactus/" target="_blank">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -187,7 +190,7 @@
             <div class="hire">
               <h2>You want us to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request" action="/submit/" method="post" target="_blank"> {% csrf_token %}
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" name="opt-1" type="checkbox" value="app design">
@@ -200,7 +203,7 @@
                       </svg>
                       App Design
                     </label>
-                    <input id="opt-2" name="opt-2" type="checkbox" value="graphic design">
+                    <input id="opt-2" name="opt-2" type="checkbox" value="Flask Website">
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -208,9 +211,9 @@
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
                       </svg>
-                      Graphic Design
+                      Flask Website
                     </label>
-                    <input id="opt-3" name="opt-3" type="checkbox" value="motion design">
+                    <input id="opt-3" name="opt-3" type="checkbox" value="Django Website">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -218,7 +221,7 @@
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
                       </svg>
-                      Motion Design
+                      Django Website
                     </label>
                   </span>
                   <span class="options-b">
@@ -242,7 +245,7 @@
                       </svg>
                       Webdesign
                     </label>
-                    <input id="opt-6" name="opt-6" type="checkbox" value="django design">
+                    <input id="opt-6" name="opt-6" type="checkbox" value="Other">
                     <label for="opt-6">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -250,7 +253,7 @@
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
                       </svg>
-                      Django Website
+                      Other
                     </label>
                   </span>
                 </div>

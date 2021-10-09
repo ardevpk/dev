@@ -130,7 +130,7 @@
 										
 										<div class="span-4-5">
 											<h3 class="major">Contact Form</h3>
-											<form method="post" action="/login/">
+											<form method="post" action="/submitting/"> {% csrf_token %} 
 												<div class="field third">
 													<label for="demo-name">Name</label>
 													<input type="text" name="name" id="demo-name" value="" placeholder="Jeff Bezos" />
@@ -143,13 +143,13 @@
 													<label for="demo-category">Category</label>
 													<div class="select-wrapper">
 														<select name="category" id="demo-category">
-															<option value="1">Select</option>
-															<option value="3">Django</option>
-															<option value="4">Flask</option>
-															<option value="5">Python</option>
-															<option value="6">Web Design</option>
-															<option value="7">Job Opputunity</option>
-															<option value="8">Other</option>
+															<option value="None">Select</option>
+															<option value="Django">Django</option>
+															<option value="Flask">Flask</option>
+															<option value="Python">Python</option>
+															<option value="Web Design">Web Design</option>
+															<option value="Job Opputunity">Job Opputunity</option>
+															<option value="Other">Other</option>
 														</select>
 													</div>
 												</div>
@@ -190,9 +190,10 @@
 								<div class="inner columns divided">
 									<div class="span-1-5">
 										<ul class="contact-icons color1">
-											<li class="icon fa-github"><a href="https://github.com/ardevpk">Github</a></li>
-											<li class="icon fa-instagram"><a href="https://instagram.com/">Instagram</a></li>
-											<li class="icon fa-facebook"><a href="https://facebook.com">Facebook</a></li>
+											<li class="icon fa-github"><a href="https://github.com/ardevpk" target="_blank">Github</a></li>
+											<li class="icon fa-whatsapp"><a href="tel:+92 321 360078" target="_balnk">Whatsapp</a></li>
+											<li class="fa fa-envelope"><a href="mailto:hackerzxstudio@gmail.com" target="_balnk">Business Email</a></li>
+											<li class="icon fa-at"><a href="mailto:adnan1470369258@gmail.com" target="_balnk">Personal Email</a></li>
 										</ul>
 									</div>
 								</div>

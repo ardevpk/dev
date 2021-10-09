@@ -4,7 +4,7 @@
    <head>
       <meta charset="utf-8">
       <title>Responsive Contact us Form | CodingNepal</title>
-      <link rel="shortcut icon" href="/static/contactus/blog.png" type="image/x-icon">
+      <link rel="shortcut icon" href="/static/contactus/logo.png" type="image/x-icon">
       <link rel="stylesheet" href="/static/contactus/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -13,7 +13,7 @@
       <div class="text">
          Contact us
       </div>
-      <form action="sending/" method="POST">
+      <form action="/sending/" method="POST" target="_blank"> {% csrf_token %}
          <div class="form-row">
             <div class="input-data">
                <input type="text" name="fname" id="id_fname" required>
@@ -28,14 +28,14 @@
          </div>
          <div class="form-row">
             <div class="input-data">
-               <input type="text" name="email" id="id_email" required>
+               <input type="email" name="email" id="id_email" required>
                <div class="underline"></div>
                <label for="">Email Address</label>
             </div>
             <div class="input-data">
-               <input type="tel" name="phone" id="phone" required>
+               <input type="text" name="subject1" id="phone" required>
                <div class="underline"></div>
-               <label for="">Phone</label>
+               <label for="">Subject</label>
             </div>
          </div>
          <div class="form-row">
