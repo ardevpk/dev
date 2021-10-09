@@ -1096,11 +1096,11 @@ body {
   /* background-image: url("../img/about-winners.jpg"); */
 }
 .about--options > a:nth-child(2) {
-  background-image: url("../img/design2.jpg");
+  background-image: url("../img/design2.JPG");
   /* background-image: url("../img/about-philosophy.jpg"); */
 }
 .about--options > a:nth-child(3) {
-  background-image: url("../img/design3.jpg");
+  background-image: url("../img/design3.JPG");
 }
 .about--options > a:hover h3 {
   bottom: -50px;
