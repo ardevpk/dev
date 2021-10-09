@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ai Prime</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+{% load static %}
+<!-- {% static 'p1/' %} -->
+<link rel="shortcut icon" href="{% static 'p1/assets/images/logo.png' %}" type="image/x-icon">
+</head>
+<body class="bg-black muli">
+<nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+<div class="flex justify-between">
+<a href="#" class="flex items-center p-2 mr-4 no-underline">
+<img class="max-h-l2 w-auto" src="{% static 'p1/assets/images/logo.png' %}" />
+</a>
+<a data-toggle="toggle-nav" data-target="#nav-items" href="#" class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+<i data-feather="menu"></i>
+</a>
+</div>
+<div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+<a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
+<a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Get Started</a>
+<!-- <a href="#pricing" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Pricing</a>
+<a href="#blog" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Blog</a> -->
+<a href="https://ardevpk.herokuapp.com/register/" target="_blank" class="button bg-white black fw-600 no-underline mx-5">Register</a>
+</div>
+</nav>
+
+<section id="home" class="min-h-100vh flex justify-start items-center">
+<div class="mx-5 md-mx-l5">
+<div class="inline-block br-round bg-indigo-30 indigo-lightest p-2 fs-s2 mb-5">
+  <a href="https://ardevpk.herokuapp.com/login/" target="_blank">
+<div class="inline-block bg-indigo indigo-lightest br-round px-3 py-1 mr-3 fs-s3">Join Meet Up</div>
+</a>
+We are coming to your location.
+</div>
+<div>
+<h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Ai<br>Prime</h1>
+<!-- <div class="br-8 mt-10 inline-flex">
+<input type="text" class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0" placeholder="Email Address">
+<button class="button-lg bg-indigo-lightest-20 indigo-lightest focus-white fw-300 fs-s3 mr-0 br-l-0">Get
+Started</button>
+</div>
+<div class="white opacity-20 fs-s3 mt-3">No credit card required</span>
+</div> -->
+</div>
+</section>
+
+<section id="features" class="p-10 md-p-l5">
+<div class="flex flex-column md-flex-row mx-auto">
+<div class="w-100pc md-w-40pc">
+<div class="br-8 p-5 m-5">
+<div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i data-feather="inbox" class="w-l5"></i></div>
+<h4 class="white fw-600 fs-m3 mb-5">Storage</h4>
+<div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">The more storage you have, the more stuff you accumulate.</div>
+<a href="#" class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
+</div>
+</div>
+<div class="w-100pc md-w-40pc">
+<div class="br-8 p-5 m-5">
+<div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i data-feather="cpu" class="w-l5"></i></div>
+<h4 class="white fw-600 fs-m3 mb-5">Compute</h4>
+<div class="indigo-lightest fw-600 fs-m1 opacity-50">Do not compute the totality of your poultry population until all the manifestations of incubation have been entirely completed.</div>
+<a href="#" class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
+</div>
+</div>
+<div class="w-100pc md-w-40pc">
+<div class="br-8 p-5 m-5">
+<div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i data-feather="database" class="w-l5"></i></div>
+<h4 class="white fw-600 fs-m3 mb-5">Database</h4>
+<div class="indigo-lightest fw-600 fs-m1 opacity-50">The old question 'Is it in the database?' will be replaced by 'Is it on the blockchain?.</div>
+<a href="#" class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="relative bg-indigo-lightest-10">
+<div id="slider-1">
+<div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+<h2 class="white fs-l3 fw-900">WE'VE GOT SOMETHING EXCITING TO ANNOUNCE</h2>
+<p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Coming Soon. Stay Tuned!</p>
+<a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Coming...</a>
+</div>
+<div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+<h2 class="white fs-l3 fw-900">WE'VE GOT SOMETHING EXCITING TO ANNOUNCE</h2>
+<p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Coming Soon. Stay Tuned!</p>
+<a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Coming...</a>
+</div>
+<div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+<h2 class="white fs-l3 fw-900">WE'VE GOT SOMETHING EXCITING TO ANNOUNCE</h2>
+<p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Coming Soon. Stay Tuned!</p>
+<a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Coming...</a>
+</div>
+</div>
+<ul class="absolute list-none w-100pc flex justify-between top-50pc">
+<li><button class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i data-feather="chevron-left"></i></button></li>
+<li><button class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i data-feather="chevron-right"></i></button></li>
+</ul>
+</section>
+
+<!-- <section class="p-10 md-py-10">
+<div class="w-100pc md-w-70pc mx-auto py-10">
+<h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
+Lorem ipsum dolor sit amet, <span class="border-b bc-indigo bw-4"> consectetur</span> adipiscing elit,
+sed do eiusmod tempor </h2>
+</div>
+</section> -->
+
+<section class="py-l10">
+<div class="flex flex-column md-flex-row md-w-80pc mx-auto">
+<div class="w-100pc md-w-50pc">
+<div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+<div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+individual</div>
+<div class="indigo-lightest fw-600 fs-m1">Stay Tuned <span class="opacity-30"> Something New Is On Its Way................</span> </div>
+<a href="https://ardevpk.herokuapp.com/one/" target="_blank" class="mt-10 button bg-black fs-s3 white no-underline">Portfolio</a>
+</div>
+</div>
+<div class="w-100pc md-w-50pc">
+<div class="br-8 p-5 m-5 bg-indigo-lightest-10  pointer hover-scale-up-1 ease-300">
+<div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+team</div>
+<div class="indigo-lightest fw-600 fs-m1">Stay Tuned <span class="opacity-30"> For Something Awesome................</span> </div>
+<a href="https://ardevpk.herokuapp.com/two/" target="_blank" class="mt-10 button bg-black fs-s3 white no-underline">Resume</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="p-10 md-p-l5">
+<div id="slider-2">
+<div class="px-3">
+<div class="p-8 br-8 bg-indigo-lightest-10 relative">
+<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Success is not final; failure is not fatal: it is the courage to continue that counts. </p>
+<div class="flex items-center my-5">
+<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/74.jpg" alt=""></div>
+<div class="ml-4 fs-s1">
+<div class="indigo-lightest">Winston Churchill</div>
+<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
+</div>
+</div>
+</div>
+</div>
+<div class="px-3">
+<div class="p-8 br-8 bg-indigo-lightest-10 relative">
+<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Play by the rules, but be ferocious </p>
+<div class="flex items-center my-5">
+<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/34.jpg" alt=""></div>
+<div class="ml-4 fs-s1">
+<div class="indigo-lightest">Phil Knight</div>
+<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
+</div>
+</div>
+</div>
+</div>
+<div class="px-3">
+<div class="p-8 br-8 bg-indigo-lightest-10 relative">
+<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Business opportunities are like buses, there’s always another one coming</p>
+<div class="flex items-center my-5">
+<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+<div class="ml-4 fs-s1">
+<div class="indigo-lightest">Richard Branson</div>
+<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
+</div>
+</div>
+</div>
+</div>
+<div class="px-3">
+<div class="p-8 br-8 bg-indigo-lightest-10 relative">
+<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">You only have to do a few things right in your life so long as you don’t do too many things wrong </p>
+<div class="flex items-center my-5">
+<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/60.jpg" alt=""></div>
+<div class="ml-4 fs-s1">
+<div class="indigo-lightest">Justin H. Lomeli</div>
+<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="p-0 md-p-5">
+<div class="flex flex-wrap">
+<div class="w-100pc md-w-33pc p-10">
+<a href="../main/index.html" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+<img class="w-100pc" src="{% static 'p1/assets/images/design3.jpg' %}" alt="">
+<p class="fw-600 white fs-m3 mt-3">
+Galaxy Design…
+</p>
+<div class="indigo fs-s3 italic after-arrow-right my-4">2 months ago by AbdulRehman</div>
+</a>
+</div>
+<div class="w-100pc md-w-33pc p-10">
+<a href="/" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+<img class="w-100pc" src="{% static 'p1/assets/images/design1.jpg' %}" alt="">
+<p class="fw-600 white fs-m3 mt-3">
+Ethereal Design…
+</p>
+<div class="indigo fs-s3 italic after-arrow-right my-4">4 months ago by AbdulRehman</div>
+</a>
+</div>
+<div class="w-100pc md-w-33pc p-10">
+<a href="index.html" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+<img class="w-100pc" src="{% static 'p1/assets/images/design2.jpg' %}" alt="">
+<p class="fw-600 white fs-m3 mt-3">
+Ai Prime Design…
+</p>
+<div class="indigo fs-s3 italic after-arrow-right my-4">3 months ago by AbdulRehman</div>
+</a>
+</div>
+</div>
+
+
+<div class="flex flex-wrap">
+  <div class="w-100pc md-w-33pc p-10">
+  <a href="https://ardevpk.herokuapp.com/one/" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+  <img class="w-100pc" src="{% static 'p1/assets/images/portfolio.jpg' %}" alt="">
+  <p class="fw-600 white fs-m3 mt-3">
+  Portfolio…
+  </p>
+  <div class="indigo fs-s3 italic after-arrow-right my-4">2 months ago by AbdulRehman</div>
+  </a>
+  </div>
+  <div class="w-100pc md-w-33pc p-10">
+  <a href="https://ardevpk.herokuapp.com/two/" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+  <img class="w-100pc" src="{% static 'p1/assets/images/resume.jpg' %}" alt="">
+  <p class="fw-600 white fs-m3 mt-3">
+  Resume…
+  </p>
+  <div class="indigo fs-s3 italic after-arrow-right my-4">4 months ago by AbdulRehman</div>
+  </a>
+  </div>
+  </div>
+
+
+</section>
+
+<section class="p-10 md-p-l5">
+<div class="br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center">
+<div class="w-100pc md-w-33pc">
+<h2 class="white fs-m4 fw-800">NEWSLETTER</h2>
+<p class="fw-600 indigo-lightest opacity-40">Be The Reason Someone Smiles Today.</p>
+</div>
+<div class="w-100pc md-w-50pc">
+<div class="flex my-5">
+<input type="text" class="input-lg flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0" placeholder="Email Address">
+<button class="button-lg bg-indigo indigo-lightest fw-300 fs-s3 br-l-0">Get Started</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+<div class="flex flex-wrap">
+<div class="md-w-25pc mb-10">
+<img src="{% static 'p1/assets/images/logo.png' %}" class="w-l5" alt="">
+<div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+<p>It is only when they go wrong that machines remind you how powerful they are.</p>
+<br>
+ <p>Technology is best when it brings people together.</p>
+</div>
+</div>
+<div class="w-100pc md-w-50pc">
+<div class="flex justify-around">
+<div class="w-33pc md-px-10 mb-10">
+<h5 class="white">Design</h5>
+<ul class="list-none mt-5 fs-s2">
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Galaxy</a></li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Ethereal</a>
+</li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Portfolio</a></li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Resume</a>
+</li>
+</ul>
+</div>
+<div class="w-33pc md-px-10 mb-10">
+<h5 class="white">About</h5>
+<ul class="list-none mt-5 fs-s2">
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Galaxy About</a></li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Ethereal About</a>
+</li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Portfolio About</a></li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Resume About</a>
+</li>
+</ul>
+</div>
+<div class="w-33pc md-px-10 mb-10">
+<h5 class="white">Contact</h5>
+<ul class="list-none mt-5 fs-s2">
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Galaxy Contact</a></li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Ethereal Contact</a>
+</li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Portfolio Contact</a></li>
+<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Resume Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w-100pc md-w-25pc">
+<div class="flex w-75pc md-w-100pc mx-auto">
+<input type="text" class="input flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0" placeholder="Email Address">
+<button class="button bg-indigo indigo-lightest fw-300 fs-s3 br-l-0" type="hidden">Start</button>
+</div>
+<div class="flex justify-around my-8">
+<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="facebook" class="absolute-center h-4"></i></a>
+<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="instagram" class="absolute-center h-4"></i></a>
+<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="github" class="absolute-center h-4"></i></a>
+<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="linkedin" class="absolute-center h-4"></i></a>
+</div>
+</div>
+</div>
+</footer> -->
+
+
+<a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="https://github.com/ardevpk" target="_blank">
+  <i class="w-4" data-feather="github"></i>
+
+<!-- <a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="https://gum.co/tifJM" target="_blank">
+  <i class="w-4" data-feather="linkedin"></i> -->
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
+<script src="https://unpkg.com/feather-icons" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
+<script src="{% static 'p1/assets/js/script.js' %}" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135523296-1" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
+<script type="4f2bfdafb68c7a5263c4219c-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135523296-1');
+</script><script src="{% static 'p1/assets/js/rocket-loader.min.js' %}" data-cf-settings="4f2bfdafb68c7a5263c4219c-|49" defer=""></script></body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">{% load static %}
+    <link rel="stylesheet" href="{% static 'p3/assets/css/jquery.fullPage.css' %}">
+    <link rel="stylesheet" href="{% static 'p3/assets/css/common.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="shortcut icon" href="{% static 'p3/assets/img/favicon.ico' %}">
+    <link rel="apple-touch-icon" href="{% static 'p3/assets/img/apple-touch-icon.png' %}">
+    <title>About Me | Abdul Rehman PORTFOLIO</title>
+</head>
+
+<body>
+    <header><a class="name" href="/">Abdul Rehman</a>
+        <div class="wrap">
+            <div class="icons">
+
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="https://github.com/djangoaio" class="fa fa-github-square" target="_blank"></a>
+            <div class="menuIcon js-menuBtn"></div>
+        </div>
+        <nav class="global-nav">
+            <ul class="global-nav__list">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/p3/about">ABOUT ME</a></li>
+                <li><a class="js-contact" href="/p3/#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="curtain"></div>
+        <div class="loader"></div>
+    </header>
+    <main id="barba-wrapper">
+        <div class="barba-container" data-namespace="underlayer">
+            <div class="page-top">
+                <div class="page-top__inner"><a class="back-arrow" href="/p3/#about"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="34" viewBox="0 0 67 34"><g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" transform="translate(2 1)"><path stroke-width="2" d="M0,15.5533333 L64,15.5533333"/><polyline stroke-width="2" points="15.556 0 0 15.556 15.556 31.111"/></g></svg></a>
+                    <p class="scrollDown">SCROLLDOWN</p>
+                    <div class="title">
+                        <h2 class="title__text">About Me</h2>
+                        <div class="border js-toRight"><span></span><span></span></div>
+                        <p class="title__lead">I love to Write Code, Explore Technology,<br>and to Learn Something New.<p>
+                    </div>
+                    <div class="image image__about"></div>
+                </div>
+            </div>
+            <section class="wrapper">
+                <div class="who container">
+                    <div class="text text--top">
+                        <p class="heading-num">01</p>
+                        <div class="text__wrap text__wrap--top content">
+                            <h2 class="heading heading--top">WHO I AM</h2>
+                            <div class="who__wrap">
+                                <div class="who__name">
+                                    <h3 class="who__jp">Abdul Rehman</h3>
+                                </div>
+                                <p class="who__text">I was born in 2004, after matric in 2020: Out of my curiosity about how web apps work,
+                                     I started learning development using the most famous frameworks of Python like Django/Flask from YouTube
+                                      and other learning websites. I can develop useful & professional web apps using Django and flask to 
+                                      accomplish customer requirements. After practicing for years now I feel I can join progressive teams like 
+                                      yours to further polish my skills and entertain any workloads coming my way with an open heart. </p>
+                                <div class="who__image"><img src="{% static 'p3/assets/img/portrait.jpg' %}" alt="Abdul Rehman"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="passion container">
+                    <div class="text">
+                        <p class="heading-num">02</p>
+                        <div class="text__wrap content">
+                            <h2 class="heading">PASSION</h2>
+                        </div>
+                    </div>
+                    <div class="content content--mlarge">
+                        <ul class="passion__list">
+                            <li class="passion__item">
+                                <div class="passion__image"><img src="{% static 'p3/assets/img/design-skills.svg' %}" alt="design"></div>
+                                <h3 class="sub-title">DESIGN</h3>
+                                <p class="passion__text">“What separates design from art is that design is meant to be... functional.” <br> “If you think math is hard try web design.” <br> “Digital design is like painting, except the paint never dries.” </p>
+                            </li>
+                            <li class="passion__item">
+                                <div class="passion__image"><img src="{% static 'p3/assets/img/tech.svg' %}" alt="TECHNOLOGY"></div>
+                                <h3 class="sub-title">TECHNOLOGY</h3>
+                                <p class="passion__text">“One machine can do the work of fifty ordinary men. No machine can do the work of p3 extraordinary man.” <br> “Getting information off the Internet is like taking a drink from a fire hydrant.”
+                                </p>
+                            </li>
+                            <li class="passion__item">
+                                <div class="passion__image"><img src="{% static 'p3/assets/img/book-open.svg' %}" alt="STORY"></div>
+                                <h3 class="sub-title">STORY</h3>
+                                <p class="passion__text">“After nourishment, shelter and companionship, stories are the thing we need most in the world.”</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-set container">
+                    <div class="text">
+                        <p class="heading-num">03</p>
+                        <div class="text__wrap content">
+                            <h2 class="heading">SKILL SET</h2>
+                        </div>
+                    </div>
+                    <div class="content content--mlarge skill-set__flex">
+                        <ul class="skill-set__list">
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Python</h4>
+                                            <p class="skill-set__year">3YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">90<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p90 js-scroll"></div>
+                                </div>
+                            </li>
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Python"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Django</h4>
+                                            <p class="skill-set__year">3YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">80<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p80 js-scroll"></div>
+                                </div>
+                            </li>
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="HTML/CSS"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Bootstrap</h4>
+                                            <p class="skill-set__year">2YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">60<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p60 js-scroll"></div>
+                                </div>
+                            </li>
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML/CSS"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">HTML</h4>
+                                            <p class="skill-set__year">2YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">60<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p60 js-scroll"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="skill-set__list">
+                                                        <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="Python"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Flask</h4>
+                                            <p class="skill-set__year">3YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">70<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p70 js-scroll"></div>
+                                </div>
+                            </li>
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="{% static 'p3/assets/img/wp.svg' %}" alt="Wordpress"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Wordpress</h4>
+                                            <p class="skill-set__year">1YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">60<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p60 js-scroll"></div>
+                                </div>
+                            </li>
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://images03.nicepage.com/a122014e1e8cdf24af08f98c/3469346068f05b639319516a/logow.png" alt="Wordpress"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Nicepage</h4>
+                                            <p class="skill-set__year">1YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">50<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p50 js-scroll"></div>
+                                </div>
+                            </li>
+                            <li class="skill-set__item">
+                                <div class="skill-set__icon"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Wordpress"></div>
+                                <div class="skill-set__detail">
+                                    <div class="skill-set__meta">
+                                        <div class="skill-set__name">
+                                            <h4 class="small-title small-title--skill">Figma</h4>
+                                            <p class="skill-set__year">1YEARS</p>
+                                        </div>
+                                        <p class="small-title small-title--skill skill-set__high">40<span class="skill-set__ratio">%</span></p>
+                                    </div>
+                                    <div class="skill-set__bar p40 js-scroll"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer"><a href="mailto:hackerzxstudio@gmail.com" target="_balnk">hackerzxstudio@gmail.com</a>
+                <a href="Whatsapp: +92 (321)-(3660078)" target="_balnk">Whatsapp: +92 321-3660078</a></footer>
+        </div>
+    </main>
+    <script src="{% static 'p3/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'p3/assets/js/jquery.fullPage.js' %}"></script>
+    <script src="{% static 'p3/assets/js/anime.min.js' %}"></script>
+    <script src="{% static 'p3/assets/js/parallax.js' %}"></script>
+    <script src="{% static 'p3/assets/js/barba.min.js' %}"></script>
+    <script src="{% static 'p3/assets/js/common.min.js' %}"></script>
+</body>
+
+</html>
