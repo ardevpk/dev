@@ -4,7 +4,3 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'p3/p3.html')
-
-
-def about(request):
-    return render(request, 'p3/about.html')

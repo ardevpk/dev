@@ -1,288 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Galaxy</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Adbul Rehman From Lahore Django, Flask Programmer/Developer and UX/UI Designer For Businesses">
-  <meta name="keywords" content="Galaxy, Abdul Rehman, Portfolio, Resume, CV, UX, UI, Web Designs, Programmer, Programming, Django, Flask, Developer">
-  <meta name="author" content="Abdul Rehman">
-  {% load static %}
-  <!-- {% static 'main/' %} -->
-  <link rel="shortcut icon" href="{% static 'main/assets/img/logo.png' %}" type="image/x-icon">
-  <link rel="stylesheet" href="{% static 'main/assets/css/main.css' %}">
-</head>
-<body>
+<!DOCTYPE HTML> 
+<html>
+	<head>
+		<title>Adbul Rehman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% load static %}
+		<!-- {% static 'main/' %} -->
+		<link rel="stylesheet" href="{% static 'main/assets/css/main.css' %}" />
+		<link rel="shortcut icon" href="{% static 'main/images/logo.png' %}" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="{% static 'main/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="{% static 'main/assets/img/logo.png' %}" alt="Galaxy">
-    <p>Galaxy</p>
-  </a>
-  <p class="device-notification--message">Galaxy has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="{% static 'main/assets/img/logo.png' %}" alt="Galaxy">
-            <p>Galaxy</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
-                <button class="cta">Hire Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="{% static 'main/assets/img/introduction-visual.png' %}" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>DESIGN</h3>
-                  <p>“What separates design from art is that design is meant to be... functional.”
-                    <br>
-                    “If you think math is hard try web design.”</p>
-                </a>
-                <a href="#0">
-                  <h3>TECHNOLOGY</h3>
-                  <p>“One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man.”
-                    <br>
-                    “Getting information off the Internet is like taking a drink from a fire hydrant.”</p>
-                </a>
-                <a href="#0">
-                  <h3>STORY</h3>
-                  <p>“After nourishment, shelter and companionship, stories are the thing we need most in the world.”</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Web Design is like painting except the paint never dries.</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="{% static 'main/assets/img/work-victory2.jpg' %}" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Motivation</p>
-                      <p class="slider--item-description">The road to success and the road to failure are almost exactly the same.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="{% static 'main/assets/img/work-metiew-smith2.jpg' %}" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Design</p>
-                      <!-- <p class="slider--item-title">Design1</p> -->
-                      <p class="slider--item-description">Web Deisgn is not just about creating pretty layouts
-                        .Its about understanding the marketing challege behind your busines.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="{% static 'main/assets/img/work-alex-nowak2.jpg' %}" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Inspiration &amp; Courage</p>
-                      <p class="slider--item-description">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Contact
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="{% static 'main/assets/img/about-visual.png' %}" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="https://ardevpk.herokuapp.com/two/" target="_blank">
-                  <h3>1.Design</h3>
-                </a>
-                <a href="https://ardevpk.herokuapp.com/" target="_blank">
-                  <h3>2.Design</h3>
-                </a>
-                <a href="https://ardevpk.herokuapp.com/one/" target="_blank">
-                  <h3>Portfolio</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <!-- <p>Pawia 5, 31-154 Kraków, Poland</p> -->
-                    <a href="mailto:hackerzxstudio@gmail.com" target="__blank">hackerzxstudio@gmail.com</a>
-                    <a href="tel:+93 321 3660078" target="_blank">+93 321 3660078</a>
-                  </div>
-                  <ul class="modal--options">
-                    <!-- <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li> -->
-                    <li><a href="https://ardevpk.herokuapp.com/contactus" target="_blank">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" name="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" name="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" name="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" name="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" name="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" name="opt-6" type="checkbox" value="django design">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Django Website
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" name="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" name="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Hire us</li>
-  </ul>
-</div>
+				<!-- Wrapper -->
+					<div id="wrapper">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="static/main/assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="{% static 'main/assets/js/functions-min.js' %}"></script>
-</body>
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Hello, my name<br />
+									is Abdul Rehman</h1>
+									<p>This is an <strong>Exanple</strong>, Website for my <a href="https://ardevpk.herokuapp.com" target="_blank">PORTFOLIO</a> Collection. It’s fully responsive. Hope you enjoy the website design and my hard work on this web design :)</p>
+									<ul class="actions">
+										<li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
+									</ul>
+								</div>
+								<div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="{% static 'main/images/pic01.jpg' %}" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right" id="first">
+								<div class="content span-7">
+									<h2 class="major">About</h2>
+									<p>I was born in 2004, after matric in 2020: Out of my curiosity about how web apps work, I started learning development using the most famous frameworks of Python like Django/Flask from YouTube and other learning websites. I can develop useful & professional web apps using Django and flask to accomplish customer requirements. After practicing for years now I feel I can join progressive teams like yours to further polish my skills and entertain any workloads coming my way with an open heart.
+										<br>
+										“I'm not a great programmer; I'm just a good programmer with great habits.”
+									</p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="{% static 'main/images/pic02.jpg' %}" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">Design</h2>
+									<p>“What separates design from art is that design is meant to be... functional.”
+										<br>
+										“If you think math is hard try web design.”
+										<br>
+										“Digital design is like painting, except the paint never dries.”</p>
+								</div>
+								<div class="inner">
+									<ul class="grid-icons three connected">
+										<li><span class="icon fa-diamond"><span class="label">Lorem</span></span></li>
+										<li><span class="icon fa-camera-retro"><span class="label">Ipsum</span></span></li>
+										<li><span class="icon fa-cog"><span class="label">Dolor</span></span></li>
+										<li><span class="icon fa-paper-plane"><span class="label">Sit</span></span></li>
+										<li><span class="icon fa-bar-chart"><span class="label">Amet</span></span></li>
+										<li><span class="icon fa-code"><span class="label">Nullam</span></span></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight large left">
+								<div class="content span-5">
+									<h2 class="major">About Programmers</h2>
+									<p>“Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.”</p>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="{% static 'main/images/pic03.jpg' %}" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel">
+								<div class="intro color2">
+									<h2 class="major">Productive</h2>
+									<p>“ It´s better to wait for a productive programmer to become available than it is to wait for the first available programmer to become productive.”</p>
+								</div>
+								
+
+								<section class="panel color2-alt">
+									<div class="intro color2">
+										<h2 class="major">Pages</h2>
+										<li><a href="../main/index.html" target="_blank">Galaxy</a></li>
+									<li><a href="../p1/index.html" target="_blank">Ai Prime</a></li>
+									<li><a href="https://ardevpk.herokuapp.com/one/" target="_blank">Portfolio</a></li>
+									<li><a href="https://ardevpk.herokuapp.com/two/" target="_blank">Resume</a></li>
+									</div>
+								</section>
+
+
+								<div class="gallery">
+									<div class="group span-3">
+										<a href="{% static 'main/images/gallery/fulls/main.jpg' %}" class="image filtered span-3" data-position="bottom"><img src="{% static 'main/images/gallery/thumbs/main.jpg' %}" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/p1.jpg' %}" class="image filtered span-1-5" data-position="center"><img src="{% static 'main/images/gallery/thumbs/p1.jpg' %}" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/p.jpg' %}" class="image filtered span-1-5" data-position="bottom"><img src="{% static 'main/images/gallery/thumbs/p.jpg' %}" alt="" /></a>
+									</div>
+									<a href="{% static 'main/images/gallery/fulls/r.jpg' %}" class="image filtered span-2-5" data-position="top"><img src="{% static 'main/images/gallery/thumbs/r.jpg' %}" alt="" /></a>
+									<!-- <a href="{% static 'main/images/gallery/fulls/r.jpg" class="image filtered span-2-5" data-position="top"><a href="https://ardevpk.herokuapp.com/two/"></a><img src="{% static 'main/images/gallery/thumbs/r.jpg" alt="" /></a></a> -->
+									<!-- <div class="group span-4-5">
+										<a href="{% static 'main/images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="{% static 'main/images/gallery/thumbs/05.jpg" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="{% static 'main/images/gallery/thumbs/06.jpg" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="{% static 'main/images/gallery/thumbs/07.jpg" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="{% static 'main/images/gallery/thumbs/08.jpg" alt="" /></a>
+									</div>
+									<a href="{% static 'main/images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="{% static 'main/images/gallery/thumbs/09.jpg" alt="" /></a>
+								</div> -->
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color4-alt">
+								<div class="intro color4">
+									<h2 class="major">Contact</h2>
+									<p>Now Its Your Turn!.</p>
+								</div>
+
+
+								<section class="panel color2-alt">
+									<div class="inner columns aligned">
+										
+										<div class="span-4-5">
+											<h3 class="major">Contact Form</h3>
+											<form method="post" action="/login/">
+												<div class="field third">
+													<label for="demo-name">Name</label>
+													<input type="text" name="name" id="demo-name" value="" placeholder="Jeff Bezos" />
+												</div>
+												<div class="field third">
+													<label for="demo-email">Email</label>
+													<input type="email" name="email" id="demo-email" value="" placeholder="name@mail.domain" />
+												</div>
+												<div class="field third">
+													<label for="demo-category">Category</label>
+													<div class="select-wrapper">
+														<select name="category" id="demo-category">
+															<option value="1">Select</option>
+															<option value="3">Django</option>
+															<option value="4">Flask</option>
+															<option value="5">Python</option>
+															<option value="6">Web Design</option>
+															<option value="7">Job Opputubity</option>
+															<option value="8">Other</option>
+														</select>
+													</div>
+												</div>
+												<!-- <div class="field quarter">
+													<input type="radio" id="demo-priority-low" name="demo-priority" class="color2" checked />
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="field quarter">
+													<input type="radio" id="demo-priority-high" name="demo-priority" class="color2" />
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+												<div class="field quarter">
+													<input type="checkbox" id="demo-copy" name="demo-copy" class="color2" />
+													<label for="demo-copy">Email a copy</label>
+												</div> -->
+
+												<div class="field quarter">
+													<input type="checkbox" id="demo-human" name="human" class="color2"/>
+													<label for="demo-human">Not a robot</label>
+												</div>
+
+												<div class="field">
+													<label for="demo-message">Message</label>
+													<textarea name="message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
+												</div>
+
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="special color2" /></li>
+													<!-- <li><input type="reset" value="Reset" /></li> -->
+												</ul>
+											</form>
+										</div>
+									</div>
+								</section>
+
+
+
+								<div class="inner columns divided">
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon fa-github"><a href="https://github.com/ardevpk">Github</a></li>
+											<li class="icon fa-instagram"><a href="https://instagram.com/">Instagram</a></li>
+											<li class="icon fa-facebook"><a href="https://facebook.com">Facebook</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color2-alt">
+								<div class="intro color2">
+									<h2 class="major">Thank's For Visiting Our Site</h2>
+									<p>The End...</p>
+								</div>
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">&copy; Abdul Rehman: <a href="tel:+92 321 3660078" target="_blank">Django Proragmmer</a>.</div>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'main/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'main/assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'main/assets/js/main.js' %}"></script>
+
+	</body>
 </html>

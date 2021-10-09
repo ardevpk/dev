@@ -1,350 +1,288 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ai Prime</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-{% load static %}
-<!-- {% static 'p1/' %} -->
-<link rel="shortcut icon" href="{% static 'p1/assets/images/logo.png' %}" type="image/x-icon">
+  <title>Galaxy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Adbul Rehman From Lahore Django, Flask Programmer/Developer and UX/UI Designer For Businesses">
+  <meta name="keywords" content="Galaxy, Abdul Rehman, Portfolio, Resume, CV, UX, UI, Web Designs, Programmer, Programming, Django, Flask, Developer">
+  <meta name="author" content="Abdul Rehman">
+  {% load static %}
+  <!-- {% static 'p1/' %} -->
+  <link rel="shortcut icon" href="{% static 'p1/assets/img/logo.png' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'p1/assets/css/main.css' %}">
 </head>
-<body class="bg-black muli">
-<nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
-<div class="flex justify-between">
-<a href="#" class="flex items-center p-2 mr-4 no-underline">
-<img class="max-h-l2 w-auto" src="{% static 'p1/assets/images/logo.png' %}" />
-</a>
-<a data-toggle="toggle-nav" data-target="#nav-items" href="#" class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
-<i data-feather="menu"></i>
-</a>
-</div>
-<div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
-<a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
-<a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Get Started</a>
-<!-- <a href="#pricing" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Pricing</a>
-<a href="#blog" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Blog</a> -->
-<a href="https://ardevpk.herokuapp.com/register/" target="_blank" class="button bg-white black fw-600 no-underline mx-5">Register</a>
-</div>
-</nav>
+<body>
 
-<section id="home" class="min-h-100vh flex justify-start items-center">
-<div class="mx-5 md-mx-l5">
-<div class="inline-block br-round bg-indigo-30 indigo-lightest p-2 fs-s2 mb-5">
-  <a href="https://ardevpk.herokuapp.com/login/" target="_blank">
-<div class="inline-block bg-indigo indigo-lightest br-round px-3 py-1 mr-3 fs-s3">Join Meet Up</div>
-</a>
-We are coming to your location.
-</div>
-<div>
-<h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Ai<br>Prime</h1>
-<!-- <div class="br-8 mt-10 inline-flex">
-<input type="text" class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0" placeholder="Email Address">
-<button class="button-lg bg-indigo-lightest-20 indigo-lightest focus-white fw-300 fs-s3 mr-0 br-l-0">Get
-Started</button>
-</div>
-<div class="white opacity-20 fs-s3 mt-3">No credit card required</span>
-</div> -->
-</div>
-</section>
-
-<section id="features" class="p-10 md-p-l5">
-<div class="flex flex-column md-flex-row mx-auto">
-<div class="w-100pc md-w-40pc">
-<div class="br-8 p-5 m-5">
-<div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i data-feather="inbox" class="w-l5"></i></div>
-<h4 class="white fw-600 fs-m3 mb-5">Storage</h4>
-<div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">The more storage you have, the more stuff you accumulate.</div>
-<a href="#" class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
-</div>
-</div>
-<div class="w-100pc md-w-40pc">
-<div class="br-8 p-5 m-5">
-<div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i data-feather="cpu" class="w-l5"></i></div>
-<h4 class="white fw-600 fs-m3 mb-5">Compute</h4>
-<div class="indigo-lightest fw-600 fs-m1 opacity-50">Do not compute the totality of your poultry population until all the manifestations of incubation have been entirely completed.</div>
-<a href="#" class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
-</div>
-</div>
-<div class="w-100pc md-w-40pc">
-<div class="br-8 p-5 m-5">
-<div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i data-feather="database" class="w-l5"></i></div>
-<h4 class="white fw-600 fs-m3 mb-5">Database</h4>
-<div class="indigo-lightest fw-600 fs-m1 opacity-50">The old question 'Is it in the database?' will be replaced by 'Is it on the blockchain?.</div>
-<a href="#" class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
-</div>
-</div>
-</div>
-</section>
-
-<section class="relative bg-indigo-lightest-10">
-<div id="slider-1">
-<div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-<h2 class="white fs-l3 fw-900">WE'VE GOT SOMETHING EXCITING TO ANNOUNCE</h2>
-<p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Coming Soon. Stay Tuned!</p>
-<a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Coming...</a>
-</div>
-<div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-<h2 class="white fs-l3 fw-900">WE'VE GOT SOMETHING EXCITING TO ANNOUNCE</h2>
-<p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Coming Soon. Stay Tuned!</p>
-<a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Coming...</a>
-</div>
-<div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-<h2 class="white fs-l3 fw-900">WE'VE GOT SOMETHING EXCITING TO ANNOUNCE</h2>
-<p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Coming Soon. Stay Tuned!</p>
-<a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Coming...</a>
-</div>
-</div>
-<ul class="absolute list-none w-100pc flex justify-between top-50pc">
-<li><button class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i data-feather="chevron-left"></i></button></li>
-<li><button class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i data-feather="chevron-right"></i></button></li>
-</ul>
-</section>
-
-<!-- <section class="p-10 md-py-10">
-<div class="w-100pc md-w-70pc mx-auto py-10">
-<h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
-Lorem ipsum dolor sit amet, <span class="border-b bc-indigo bw-4"> consectetur</span> adipiscing elit,
-sed do eiusmod tempor </h2>
-</div>
-</section> -->
-
-<section class="py-l10">
-<div class="flex flex-column md-flex-row md-w-80pc mx-auto">
-<div class="w-100pc md-w-50pc">
-<div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
-<div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
-individual</div>
-<div class="indigo-lightest fw-600 fs-m1">Stay Tuned <span class="opacity-30"> Something New Is On Its Way................</span> </div>
-<a href="https://ardevpk.herokuapp.com/one/" target="_blank" class="mt-10 button bg-black fs-s3 white no-underline">Portfolio</a>
-</div>
-</div>
-<div class="w-100pc md-w-50pc">
-<div class="br-8 p-5 m-5 bg-indigo-lightest-10  pointer hover-scale-up-1 ease-300">
-<div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
-team</div>
-<div class="indigo-lightest fw-600 fs-m1">Stay Tuned <span class="opacity-30"> For Something Awesome................</span> </div>
-<a href="https://ardevpk.herokuapp.com/two/" target="_blank" class="mt-10 button bg-black fs-s3 white no-underline">Resume</a>
-</div>
-</div>
-</div>
-</section>
-
-<section class="p-10 md-p-l5">
-<div id="slider-2">
-<div class="px-3">
-<div class="p-8 br-8 bg-indigo-lightest-10 relative">
-<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Success is not final; failure is not fatal: it is the courage to continue that counts. </p>
-<div class="flex items-center my-5">
-<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/74.jpg" alt=""></div>
-<div class="ml-4 fs-s1">
-<div class="indigo-lightest">Winston Churchill</div>
-<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
-</div>
-</div>
-</div>
-</div>
-<div class="px-3">
-<div class="p-8 br-8 bg-indigo-lightest-10 relative">
-<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Play by the rules, but be ferocious </p>
-<div class="flex items-center my-5">
-<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/34.jpg" alt=""></div>
-<div class="ml-4 fs-s1">
-<div class="indigo-lightest">Phil Knight</div>
-<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
-</div>
-</div>
-</div>
-</div>
-<div class="px-3">
-<div class="p-8 br-8 bg-indigo-lightest-10 relative">
-<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Business opportunities are like buses, there’s always another one coming</p>
-<div class="flex items-center my-5">
-<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
-<div class="ml-4 fs-s1">
-<div class="indigo-lightest">Richard Branson</div>
-<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
-</div>
-</div>
-</div>
-</div>
-<div class="px-3">
-<div class="p-8 br-8 bg-indigo-lightest-10 relative">
-<span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-<p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">You only have to do a few things right in your life so long as you don’t do too many things wrong </p>
-<div class="flex items-center my-5">
-<div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round" src="https://randomuser.me/api/portraits/men/60.jpg" alt=""></div>
-<div class="ml-4 fs-s1">
-<div class="indigo-lightest">Justin H. Lomeli</div>
-<!-- <div class="indigo-lightest opacity-20">Product Manager, XYZ</div> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="p-0 md-p-5">
-<div class="flex flex-wrap">
-<div class="w-100pc md-w-33pc p-10">
-<a href="../main/index.html" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-<img class="w-100pc" src="{% static 'p1/assets/images/design3.jpg' %}" alt="">
-<p class="fw-600 white fs-m3 mt-3">
-Galaxy Design…
-</p>
-<div class="indigo fs-s3 italic after-arrow-right my-4">2 months ago by AbdulRehman</div>
-</a>
-</div>
-<div class="w-100pc md-w-33pc p-10">
-<a href="/" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-<img class="w-100pc" src="{% static 'p1/assets/images/design1.jpg' %}" alt="">
-<p class="fw-600 white fs-m3 mt-3">
-Ethereal Design…
-</p>
-<div class="indigo fs-s3 italic after-arrow-right my-4">4 months ago by AbdulRehman</div>
-</a>
-</div>
-<div class="w-100pc md-w-33pc p-10">
-<a href="index.html" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-<img class="w-100pc" src="{% static 'p1/assets/images/design2.jpg' %}" alt="">
-<p class="fw-600 white fs-m3 mt-3">
-Ai Prime Design…
-</p>
-<div class="indigo fs-s3 italic after-arrow-right my-4">3 months ago by AbdulRehman</div>
-</a>
-</div>
-</div>
-
-
-<div class="flex flex-wrap">
-  <div class="w-100pc md-w-33pc p-10">
-  <a href="https://ardevpk.herokuapp.com/one/" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-  <img class="w-100pc" src="{% static 'p1/assets/images/portfolio.jpg' %}" alt="">
-  <p class="fw-600 white fs-m3 mt-3">
-  Portfolio…
-  </p>
-  <div class="indigo fs-s3 italic after-arrow-right my-4">2 months ago by AbdulRehman</div>
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="{% static 'p1/assets/img/logo.png' %}" alt="Galaxy">
+    <p>Galaxy</p>
   </a>
+  <p class="device-notification--message">Galaxy has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="{% static 'p1/assets/img/logo.png' %}" alt="Galaxy">
+            <p>Galaxy</p>
+          </a>
+          <button class="header--cta cta">Hire Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Works</span></li>
+            <li><span>About</span></li>
+            <li><span>Contact</span></li>
+            <li><span>Hire us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Your next<br>interactive<br>experience</h1>
+                <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="{% static 'p1/assets/img/introduction-visual.png' %}" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>DESIGN</h3>
+                  <p>“What separates design from art is that design is meant to be... functional.”
+                    <br>
+                    “If you think math is hard try web design.”</p>
+                </a>
+                <a href="#0">
+                  <h3>TECHNOLOGY</h3>
+                  <p>“One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man.”
+                    <br>
+                    “Getting information off the Internet is like taking a drink from a fire hydrant.”</p>
+                </a>
+                <a href="#0">
+                  <h3>STORY</h3>
+                  <p>“After nourishment, shelter and companionship, stories are the thing we need most in the world.”</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Web Design is like painting except the paint never dries.</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'p1/assets/img/work-victory2.jpg' %}" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Motivation</p>
+                      <p class="slider--item-description">The road to success and the road to failure are almost exactly the same.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'p1/assets/img/work-metiew-smith2.jpg' %}" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Design</p>
+                      <!-- <p class="slider--item-title">Design1</p> -->
+                      <p class="slider--item-description">Web Deisgn is not just about creating pretty layouts
+                        .Its about understanding the marketing challege behind your busines.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'p1/assets/img/work-alex-nowak2.jpg' %}" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Inspiration &amp; Courage</p>
+                      <p class="slider--item-description">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>We<br>believe in<br>passionate<br>people</h2>
+                <a href="#0">Contact
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="{% static 'p1/assets/img/about-visual.png' %}" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="https://ardevpk.herokuapp.com/two/" target="_blank">
+                  <h3>1.Design</h3>
+                </a>
+                <a href="https://ardevpk.herokuapp.com/" target="_blank">
+                  <h3>2.Design</h3>
+                </a>
+                <a href="https://ardevpk.herokuapp.com/one/" target="_blank">
+                  <h3>Portfolio</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <!-- <p>Pawia 5, 31-154 Kraków, Poland</p> -->
+                    <a href="mailto:hackerzxstudio@gmail.com" target="__blank">hackerzxstudio@gmail.com</a>
+                    <a href="tel:+93 321 3660078" target="_blank">+93 321 3660078</a>
+                  </div>
+                  <ul class="modal--options">
+                    <!-- <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li> -->
+                    <li><a href="https://ardevpk.herokuapp.com/contactus" target="_blank">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>You want us to do</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" name="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Design
+                    </label>
+                    <input id="opt-2" name="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" name="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" name="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                    <input id="opt-5" name="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-6" name="opt-6" type="checkbox" value="django design">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Django Website
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" name="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" name="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="w-100pc md-w-33pc p-10">
-  <a href="https://ardevpk.herokuapp.com/two/" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
-  <img class="w-100pc" src="{% static 'p1/assets/images/resume.jpg' %}" alt="">
-  <p class="fw-600 white fs-m3 mt-3">
-  Resume…
-  </p>
-  <div class="indigo fs-s3 italic after-arrow-right my-4">4 months ago by AbdulRehman</div>
-  </a>
-  </div>
-  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Hire us</li>
+  </ul>
+</div>
 
-
-</section>
-
-<section class="p-10 md-p-l5">
-<div class="br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center">
-<div class="w-100pc md-w-33pc">
-<h2 class="white fs-m4 fw-800">NEWSLETTER</h2>
-<p class="fw-600 indigo-lightest opacity-40">Be The Reason Someone Smiles Today.</p>
-</div>
-<div class="w-100pc md-w-50pc">
-<div class="flex my-5">
-<input type="text" class="input-lg flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0" placeholder="Email Address">
-<button class="button-lg bg-indigo indigo-lightest fw-300 fs-s3 br-l-0">Get Started</button>
-</div>
-</div>
-</div>
-</section>
-
-<!-- <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
-<div class="flex flex-wrap">
-<div class="md-w-25pc mb-10">
-<img src="{% static 'p1/assets/images/logo.png' %}" class="w-l5" alt="">
-<div class="white opacity-70 fs-s2 mt-4 md-pr-10">
-<p>It is only when they go wrong that machines remind you how powerful they are.</p>
-<br>
- <p>Technology is best when it brings people together.</p>
-</div>
-</div>
-<div class="w-100pc md-w-50pc">
-<div class="flex justify-around">
-<div class="w-33pc md-px-10 mb-10">
-<h5 class="white">Design</h5>
-<ul class="list-none mt-5 fs-s2">
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Galaxy</a></li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Ethereal</a>
-</li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Portfolio</a></li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Resume</a>
-</li>
-</ul>
-</div>
-<div class="w-33pc md-px-10 mb-10">
-<h5 class="white">About</h5>
-<ul class="list-none mt-5 fs-s2">
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Galaxy About</a></li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Ethereal About</a>
-</li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Portfolio About</a></li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Resume About</a>
-</li>
-</ul>
-</div>
-<div class="w-33pc md-px-10 mb-10">
-<h5 class="white">Contact</h5>
-<ul class="list-none mt-5 fs-s2">
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Galaxy Contact</a></li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Ethereal Contact</a>
-</li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Portfolio Contact</a></li>
-<li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Resume Contact</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="w-100pc md-w-25pc">
-<div class="flex w-75pc md-w-100pc mx-auto">
-<input type="text" class="input flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0" placeholder="Email Address">
-<button class="button bg-indigo indigo-lightest fw-300 fs-s3 br-l-0" type="hidden">Start</button>
-</div>
-<div class="flex justify-around my-8">
-<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="facebook" class="absolute-center h-4"></i></a>
-<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="instagram" class="absolute-center h-4"></i></a>
-<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="github" class="absolute-center h-4"></i></a>
-<a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i data-feather="linkedin" class="absolute-center h-4"></i></a>
-</div>
-</div>
-</div>
-</footer> -->
-
-
-<a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="https://github.com/ardevpk" target="_blank">
-  <i class="w-4" data-feather="github"></i>
-
-<!-- <a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="https://gum.co/tifJM" target="_blank">
-  <i class="w-4" data-feather="linkedin"></i> -->
-
-
-</div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
-<script src="https://unpkg.com/feather-icons" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
-<script src="{% static 'p1/assets/js/script.js' %}" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135523296-1" type="4f2bfdafb68c7a5263c4219c-text/javascript"></script>
-<script type="4f2bfdafb68c7a5263c4219c-text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-135523296-1');
-</script><script src="{% static 'p1/assets/js/rocket-loader.min.js' %}" data-cf-settings="4f2bfdafb68c7a5263c4219c-|49" defer=""></script></body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/p1/assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="{% static 'p1/assets/js/functions-min.js' %}"></script>
+</body>
 </html>
