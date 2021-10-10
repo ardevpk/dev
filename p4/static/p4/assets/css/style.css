@@ -907,10 +907,16 @@ section .container {
 .contact .info-box .social-links a:hover {
   color: #18d26e;
 }
-.contact .php-email-form {
+/* .contact .php-email-form {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+} */
+
+.contact .other {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
 }
+
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);

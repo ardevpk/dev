@@ -92,3 +92,26 @@ def sending(request):
 
     else:
         return render(request, 'contactus/error.html')
+
+
+
+
+def contact(request):
+    if request.method=="POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject1 = request.POST.get('subject1')
+        message = request.POST.get('message')
+
+        subject = f'New Msg, From: {name}'
+        message = f'Email: {email}, Subject: {subject1} & Message: {message}.'
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = ["adnan1470369258@gmail.com"]
+        send_mail(subject, message, email_from, recipient_list)
+        return render(request, 'contactus/success.html')
+
+    elif request.method!="POST":
+        return render(request, 'contactus/error.html')
+
+    else:
+        return render(request, 'contactus/error.html')

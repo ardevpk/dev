@@ -91,30 +91,25 @@
 								<section class="panel color2-alt">
 									<div class="intro color2">
 										<h2 class="major">Pages</h2>
-										<li><a href="../main/index.html" target="_blank">Galaxy</a></li>
-									<li><a href="../p1/index.html" target="_blank">Ai Prime</a></li>
-									<li><a href="https://ardevpk.herokuapp.com/one/" target="_blank">Portfolio</a></li>
-									<li><a href="https://ardevpk.herokuapp.com/two/" target="_blank">Resume</a></li>
+										<li><a href="/p1/" target="_blank">Galaxy</a></li>
+									<li><a href="/p2/" target="_blank">Portfolio</a></li>
+									<li><a href="/p4/" target="_blank">Resume</a></li>
+									<li><a href="/p3/" target="_blank">Resume 2.0</a></li>
 									</div>
 								</section>
 
 
 								<div class="gallery">
 									<div class="group span-3">
-										<a href="{% static 'main/images/gallery/fulls/main.jpg' %}" class="image filtered span-3" data-position="bottom"><img src="{% static 'main/images/gallery/thumbs/main.JPG' %}" alt="" /></a>
-										<a href="{% static 'main/images/gallery/fulls/p1.jpg' %}" class="image filtered span-1-5" data-position="center"><img src="{% static 'main/images/gallery/thumbs/p1.JPG' %}" alt="" /></a>
-										<a href="{% static 'main/images/gallery/fulls/p.jpg' %}" class="image filtered span-1-5" data-position="bottom"><img src="{% static 'main/images/gallery/thumbs/p.jpg' %}" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/p1.JPG' %}" class="image filtered span-3" data-position="bottom">
+											<img src="{% static 'main/images/gallery/thumbs/p1.JPG' %}" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/p.JPG' %}" class="image filtered span-1-5" data-position="center">
+											<img src="{% static 'main/images/gallery/thumbs/p.JPG' %}" alt="" /></a>
+										<a href="{% static 'main/images/gallery/fulls/r.JPG' %}" class="image filtered span-1-5" data-position="bottom">
+											<img src="{% static 'main/images/gallery/thumbs/r.JPG' %}" alt="" /></a>
 									</div>
-									<a href="{% static 'main/images/gallery/fulls/r.jpg' %}" class="image filtered span-2-5" data-position="top"><img src="{% static 'main/images/gallery/thumbs/r.JPG' %}" alt="" /></a>
-									<!-- <a href="{% static 'main/images/gallery/fulls/r.jpg" class="image filtered span-2-5" data-position="top"><a href="https://ardevpk.herokuapp.com/two/"></a><img src="{% static 'main/images/gallery/thumbs/r.jpg" alt="" /></a></a> -->
-									<!-- <div class="group span-4-5">
-										<a href="{% static 'main/images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="{% static 'main/images/gallery/thumbs/05.jpg" alt="" /></a>
-										<a href="{% static 'main/images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="{% static 'main/images/gallery/thumbs/06.jpg" alt="" /></a>
-										<a href="{% static 'main/images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="{% static 'main/images/gallery/thumbs/07.jpg" alt="" /></a>
-										<a href="{% static 'main/images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="{% static 'main/images/gallery/thumbs/08.jpg" alt="" /></a>
-									</div>
-									<a href="{% static 'main/images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="{% static 'main/images/gallery/thumbs/09.jpg" alt="" /></a>
-								</div> -->
+									<a href="{% static 'main/images/gallery/fulls/r2.JPG' %}" class="image filtered span-2-5" data-position="top">
+										<img src="{% static 'main/images/gallery/thumbs/r2.JPG' %}" alt="" /></a>
 							</section>
 
 						<!-- Panel -->
@@ -130,14 +125,14 @@
 										
 										<div class="span-4-5">
 											<h3 class="major">Contact Form</h3>
-											<form method="post" action="/submitting/"> {% csrf_token %} 
+											<form method="post" action="/submitting/" target="_blank"> {% csrf_token %} 
 												<div class="field third">
 													<label for="demo-name">Name</label>
-													<input type="text" name="name" id="demo-name" value="" placeholder="Jeff Bezos" />
+													<input type="text" name="name" id="demo-name" value="" placeholder="Jeff Bezos" required/>
 												</div>
 												<div class="field third">
 													<label for="demo-email">Email</label>
-													<input type="email" name="email" id="demo-email" value="" placeholder="name@mail.domain" />
+													<input type="email" name="email" id="demo-email" value="" placeholder="name@mail.domain" required/>
 												</div>
 												<div class="field third">
 													<label for="demo-category">Category</label>
@@ -167,13 +162,13 @@
 												</div> -->
 
 												<div class="field quarter">
-													<input type="checkbox" id="demo-human" name="human" class="color2"/>
+													<input type="checkbox" id="demo-human" name="human" class="color2" required/>
 													<label for="demo-human">Not a robot</label>
 												</div>
 
 												<div class="field">
 													<label for="demo-message">Message</label>
-													<textarea name="message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
+													<textarea name="message" id="demo-message" placeholder="Enter your message" rows="2" required></textarea>
 												</div>
 
 												<ul class="actions">
