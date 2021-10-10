@@ -146,10 +146,10 @@ MESSAGE_TAGS = {
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "postmaster@sandboxd72e84cac80d4c1fa3bf15baff82c8f3.mailgun.org"
-EMAIL_HOST_PASSWORD = "d5fbc4704a2d6f4f17a4dc9872ab9cec-45f7aa85-0beb11cd"
+EMAIL_HOST_USER = "adnan1470369258@gmail.com"
+EMAIL_HOST_PASSWORD = "bhjnxdwguzrwzkqw"
 
 
 
