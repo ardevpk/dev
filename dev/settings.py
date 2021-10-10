@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '4jd3rqgynfzjud1qg0acz4(jt8#vm$gyy*r8_1)_rm3@q(h%pc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'ardevpk.herokuapp.com']
 
@@ -151,10 +151,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = "adnan1470369258@gmail.com"
 EMAIL_HOST_PASSWORD = "bhjnxdwguzrwzkqw"
 
-
-
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'your_account@gmail.com'
-# EMAIL_HOST_PASSWORD = 'your app password'
