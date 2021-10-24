@@ -7,5 +7,6 @@ from django.shortcuts import redirect, render
 def index(request):
     return render(request, 'main/main.html')
 
-def pages(request):
-    return HttpResponse("<br> <br> <br><center><h1>Page Not Found</h1></center>")
+# def pages(request):
+#     print(request)
+#     return HttpResponse("<br> <br> <br><center><h1>Page Not Found</h1></center>")
