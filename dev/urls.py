@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
+from dev import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('adminpanelardevpk/', admin.site.urls),
     path('', include('main.urls')),
     path('p1/', include('p1.urls')),
     path('p2/', include('p2.urls')),
@@ -26,4 +27,5 @@ urlpatterns = [
     path('p4/', include('p4.urls')),
     path('', include('authenticate.urls')),
     path('', include('contactus.urls')),
+    path('<id>/', views.red, name="red")
 ]
