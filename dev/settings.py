@@ -29,7 +29,7 @@ SECRET_KEY = '4jd3rqgynfzjud1qg0acz4(jt8#vm$gyy*r8_1)_rm3@q(h%pc'
 
 # from decouple import config
 # DEBUG = config('DEBUG', default=False)
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 # ALLOWED_HOSTS = ['127.0.0.1', 'ardevpk.herokuapp.com']
