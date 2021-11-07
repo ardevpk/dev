@@ -31,8 +31,8 @@ from decouple import config
 DEBUG = config('DEBUG', default=False)
 # DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = ['127.0.0.1', 'ardevpk.herokuapp.com']
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', 'ardevpk.herokuapp.com']
 
 
 
