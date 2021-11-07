@@ -27,12 +27,12 @@ SECRET_KEY = '4jd3rqgynfzjud1qg0acz4(jt8#vm$gyy*r8_1)_rm3@q(h%pc'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-from decouple import config
-DEBUG = config('DEBUG', default=False)
-# DEBUG = True
+# from decouple import config
+# DEBUG = config('DEBUG', default=False)
+DEBUG = True
 
-# ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ['127.0.0.1', 'ardevpk.herokuapp.com']
+ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ['127.0.0.1', 'ardevpk.herokuapp.com']
 
 
 
