@@ -1,7 +1,7 @@
 from django.http.response import Http404
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
-from django.contrib.auth import REDIRECT_FIELD_NAME, authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
 
